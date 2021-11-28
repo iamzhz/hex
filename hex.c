@@ -11,9 +11,9 @@ int main(int argc, char *argv[])
 		set_color(0x0, 0xF);
 		return 0;
 	}
-	set_color(0x0, 0x9);
+	set_color(0x0, 0x9); //浅蓝
 	puts("00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F");
-	set_color(0x0, 0x1);
+	set_color(0x0, 0x1); //蓝色
 	char ch;
 	int i = 0;
 	ch=fgetc(fp);
@@ -27,11 +27,9 @@ int main(int argc, char *argv[])
 		ch=fgetc(fp);
 		i += 1;
 		if(i == 0x10){
-			puts("");
+			puts(""); //如果一行已经有16个就换行
 			i = 0;
 		}
 	}
 	fclose(fp);
-	set_color(0x0, 0xF);
-	return 0;
-}
+	set_color(0x0, 0xF); //白色（回到默认颜色）
