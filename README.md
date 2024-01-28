@@ -8,6 +8,6 @@ gcc hex.c mycon.c -o hex.exe -lwinmm
 hex -f [file name] (-c [column number])
 ```
  - `[file name]` 文件名
- - `[column number]` 输出的列数
+ - `[column number]` 每行输出的列数
 ## :link: 
 [iamzhz/mycon](https://github.com/iamzhz/mycon)
